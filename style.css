@@ -15,6 +15,9 @@ header {
 }
 
 nav {
+  width: 90vw;
+  max-width: 1440px;
+  margin: auto;
   padding: 1rem 9.5rem;
 }
 
@@ -27,6 +30,9 @@ nav {
 /* CONTEÚDO */
 
 main {
+  width: 90%;
+  max-width: 1440px;
+  margin: auto;
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 1.5rem;
@@ -43,12 +49,12 @@ main {
   height: 24rem;
   display: flex;
   align-items: flex-end;
-  border-radius: .6rem;
+  border-radius: 0.6rem;
 }
 
 .text-block {
   z-index: 2;
-  border-radius: .6rem;
+  border-radius: 0.6rem;
 }
 
 .gradient-overlay {
@@ -57,7 +63,7 @@ main {
   height: 100%;
   background: linear-gradient(180deg, rgba(102, 102, 102, 0) 0%, #000000 100%);
   z-index: 1;
-  border-radius: .6rem;
+  border-radius: 0.6rem;
 }
 
 .banner-article > div {
@@ -84,7 +90,7 @@ h2 {
 }
 
 .section-header {
-  border-radius: .6rem;
+  border-radius: 0.6rem;
   height: 3rem;
   display: flex;
   align-items: center;
@@ -95,14 +101,14 @@ h2 {
 .side-card {
   display: flex;
   box-shadow: 0px 10px 10px 0px #0000001a;
-  border-radius: .6rem;
-  padding: .8rem .7rem;
+  border-radius: 0.6rem;
+  padding: 0.8rem 0.7rem;
   margin-top: 1.2rem;
 }
 
 h3 {
   font-weight: 700;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .gray {
@@ -111,54 +117,77 @@ h3 {
 
 .date {
   font-weight: 500;
-  font-size: .7rem;
-  margin-top: .5rem;
+  font-size: 0.7rem;
+  margin-top: 0.5rem;
 }
 
 .content-side-card {
-  padding: .8rem .7rem;
+  padding: 0.8rem 0.7rem;
 }
 
 /* POSTS RECENTES */
 
 .see-more {
-    font-weight: 500;
-    font-size: .9rem;
+  font-weight: 500;
+  font-size: 0.9rem;
 }
 
 .cards-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 1.2rem;
 }
 
 .card {
   box-shadow: 0px 10px 10px 0px #0000001a;
-  border-radius: .6rem;
+  border-radius: 0.6rem;
 }
 
 .topic {
-    color: #02A28F;
-    font-weight: 400;
-    font-size: .9rem;
+  color: #02a28f;
+  font-weight: 400;
+  font-size: 0.9rem;
 }
 
 h4 {
-    font-weight: 700;
-    font-size: 1.25rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.card-content {
+  padding: 1rem;
+  width: 100%;
 }
 
 .card-content > .autor {
-    font-size: .9rem;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
 }
 
 .card-content > .date {
-    font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .information {
-    font-weight: 400;
-    font-size: .9rem;
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+/* CATEGORIAS */
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: .5rem 0;
+}
+
+.item > span {
+  color: #616161;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 /* RODAPÉ */
@@ -168,4 +197,18 @@ footer {
   color: white;
   text-align: center;
   padding: 1rem;
+}
+
+/* RESPONSIVIDADE */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  main {
+    grid-template-columns: 1fr;
+  }
 }
