@@ -249,4 +249,13 @@ footer {
   .cards-container {
     grid-template-columns: 1fr;
   }
+
+  .section-header {
+    justify-content: center;
+    height: 2.5rem;
+  }
+
+  .see-more {
+    padding-left: 1rem;
+  }
 }
