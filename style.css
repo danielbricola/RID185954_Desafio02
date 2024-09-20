@@ -30,7 +30,7 @@ nav {
 /* CONTEÚDO */
 
 main {
-  width: 90%;
+  width: 90vw;
   max-width: 1440px;
   margin: auto;
   display: grid;
@@ -45,7 +45,6 @@ main {
   position: relative;
   background-image: url(assets/banner.jpg);
   background-size: cover;
-  width: 46rem;
   height: 24rem;
   display: flex;
   align-items: flex-end;
@@ -127,6 +126,10 @@ h3 {
 
 /* POSTS RECENTES */
 
+.recent-posts {
+  padding-top: 1.5rem;
+}
+
 .see-more {
   font-weight: 500;
   font-size: 0.9rem;
@@ -178,10 +181,14 @@ h4 {
 
 /* CATEGORIAS */
 
+.categories {
+  padding-top: 1.5rem;
+}
+
 .item {
   display: flex;
   justify-content: space-between;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
 }
 
 .item > span {
@@ -201,14 +208,45 @@ footer {
 
 /* RESPONSIVIDADE */
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (max-width: 1440px) {
   main {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .card img {
+    width: 100%;
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   main {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .logo {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    padding: 1rem 0rem;
+  }
+
+  nav {
+    padding: 1rem 0;
+  }
+
+  .logo {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .cards-container {
     grid-template-columns: 1fr;
   }
 }
